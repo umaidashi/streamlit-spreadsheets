@@ -25,3 +25,5 @@ creds = ServiceAccountCredentials.from_json_keyfile_name(
 client = gspread.authorize(creds)
 
 sheet = client.open("").sheet1
+
+all_records = sheet.get_all_records()
